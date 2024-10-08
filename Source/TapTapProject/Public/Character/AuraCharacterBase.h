@@ -3,17 +3,15 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Character.h"
+#include "PaperZDCharacter.h"
 #include "AuraCharacterBase.generated.h"
 
-UCLASS(Abstract)
-class TAPTAPPROJECT_API AAuraCharacterBase : public ACharacter
+/**
+ * 
+ */
+UCLASS()
+class TAPTAPPROJECT_API AAuraCharacterBase : public APaperZDCharacter
 {
 	GENERATED_BODY()
-
-public:
-	AAuraCharacterBase();
-
-protected:
-	virtual void BeginPlay() override;
+	
 };
